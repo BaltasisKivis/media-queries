@@ -1,3 +1,42 @@
 body {
   margin: 0;
 }
+
+h1,
+p {
+  margin: 0;
+  color: white;
+  background: rebeccapurple;
+  font-family: monospace;
+  text-align: center;
+  padding: 50px;
+}
+
+/* ekrano plotis mažesnis arba lygus 1200px */
+@media (max-width: 1200px) {
+  h1 {
+    background: black;
+    color: rebeccapurple;
+  }
+}
+
+/* ekrano plotis didesnis arba lygus 800px */
+@media (min-width: 800px) {
+  body {
+    background: orange;
+  }
+}
+
+/* ekrano aukštis mažesnis arba lygus 600px */
+@media (max-height: 600px) {
+  h1:after {
+    content: " hello ";
+  }
+}
+
+/* ekrano aukštis didesnis arba lygus 700px */
+@media (min-height: 700px) {
+  h1:before {
+    content: " MEDIA ";
+  }
+}
